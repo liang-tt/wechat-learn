@@ -1,0 +1,9 @@
+<!--components/book/search/index.wxml-->
+<view class="header">
+  <view class="search-wrap">
+    <image src="../images/search.png" class="icon-search"></image>
+    <input value="{{search}}" class="search-input" placeholder='搜索图书名称' placeholder-class='placeholder' bindblur='search' focus="{{true}}"></input>
+    <image src="../images/cancel.png" class="icon-cancel" bindtap='cancel'></image>
+  </view>
+  <view class='cancel' bindtap='cancel'>取消</view>
+</view>

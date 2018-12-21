@@ -1,0 +1,9 @@
+<!--components/book/search-key/index.wxml-->
+<view class="key-container">
+  <text class="title">{{title}}</text>
+  <view class="key-list">
+    <block wx:for="{{keyList}}">
+      <view class="keyword" data-key-word="{{item}}" bindtap='selectkey'>{{item}}</view>
+    </block>
+  </view>
+</view>

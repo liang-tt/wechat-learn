@@ -1,0 +1,13 @@
+<!--pages/book/search/search.wxml-->
+
+<v-search bindsearch="inputKey" id="search"></v-search>
+
+<view class='search-result' wx:if="{{!isSearch}}">
+  <search-key wx:if="{{historyKeys.length > 0}}" title="历史搜索" key-list="{{historyKeys}}" bindseletkey="selectKey"></search-key>
+  <search-key title="热门搜索" key-list="{{hotKyes}}" bindseletkey="selectKey"></search-key>
+</view>
+
+<v-book-list wx:else book-list="{{result}}"></v-book-list>
+
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"></v-loading>
+<v-loading class="loading-bottom" wx:if="{{loadingBottom}}"></v-loading>

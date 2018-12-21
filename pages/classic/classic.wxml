@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class="header">
+    <v-exposid classic-info="{{classicInfo.index}}"></v-exposid>
+    <view class="left-container">
+      <!-- 点赞组件 -->
+      <v-like likeInfo="{{likeInfo}}"></v-like>
+      <!-- 分享按钮 -->
+      <v-button open-type='share' class="btn-share">
+        <image src="/images/icon/share.png" class="icon-share" slot="img"></image>
+      </v-button>
+    </view>
+  </view>
+
+  <v-move wx:if="{{classicInfo.type == 100 || classicInfo.type == 300}}" image="{{classicInfo.image}}" type="{{classicInfo.type}}" content="{{classicInfo.content}}"></v-move>
+  <v-music wx:elif="{{classicInfo.type == 200}}" image="{{classicInfo.image}}" type="{{classicInfo.type}}" content="{{classicInfo.content}}" title="{{classicInfo.title}}" src="{{classicInfo.url}}"></v-music>
+
+
+  <v-navi class="navi" isFirst="{{isFirst}}" isLatest="{{isLatest}}" title="{{classicInfo.title}}" bind:next="next"  bind:previous="previous"></v-navi>
+
+</view>

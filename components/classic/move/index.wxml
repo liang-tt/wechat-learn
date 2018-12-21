@@ -1,0 +1,6 @@
+<!--components/classic/move/index.wxml-->
+<view class="classic-container">
+  <image src="{{image}}" class="cover"></image>
+  <image class="tag" src="{{img}}" />
+  <view class='content'>{{content}}</view>
+</view>

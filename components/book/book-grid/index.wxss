@@ -1,0 +1,47 @@
+/* components/book/book-grid/index.wxss */
+.book-container {
+  width: 240rpx;
+  height: 360rpx;
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5rpx;
+  box-shadow: 3rpx 3rpx 3rpx #e3e3e3;
+}
+.cover {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.description {
+  height: 140rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 10rpx 8rpx 10rpx;
+}
+
+.title {
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.author {
+    font-size: 20rpx;
+    color: #999999;
+    margin-bottom: 10rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.foot {
+  font-size: 20rpx;
+  color: #999999;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

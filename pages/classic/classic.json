@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "流行",
+  "usingComponents": {
+    "v-exposid": "/components/exposid/exposid",
+    "v-like": "/components/like/like",
+    "v-button": "/components/image-button/index",
+    "v-move": "/components/classic/move/index",
+    "v-music": "/components/classic/music/index",
+    "v-navi": "/components/navi/index"
+  }
+}

@@ -1,0 +1,26 @@
+/* components/book/search-key/index.wxss */
+.key-container {
+
+}
+.title {
+  border-left: 8rpx solid;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.key-list {
+  margin: 20rpx 10rpx 70rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.keyword {
+  background-color: #f7f7f7;
+  margin: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

@@ -1,0 +1,33 @@
+/* components/classic/music/index.wxss */
+@import "../common.wxss";
+.img-container {
+  position: relative;
+}
+.cover {
+  width: 425rpx;
+  height: 425rpx;
+  margin-top: 45rpx; 
+}
+
+.play-img {
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.roate {
+  /* transform: rotate(360deg); */
+  animation: roate 12s linear infinite;
+}
+
+@keyframes roate{
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}

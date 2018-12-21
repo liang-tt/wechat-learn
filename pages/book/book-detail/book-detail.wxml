@@ -1,0 +1,35 @@
+<!--pages/book/book-detail/book-detail.wxml-->
+<view class='header'>
+  <v-search></v-search>
+</view>
+<view class="content">
+  <view>
+    <image src="{{book.image}}"></image>
+  </view>
+  <view>
+    <view class='title'>短评</view>
+  </view>
+  <view>
+    <view class='title'>内容简介</view>
+  </view>
+  <view>
+    <view class='title'>书本信息</view>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="post-fake" bindtap='fakePost'>
+    <text>留下你的短评</text>
+  </view>
+  <v-like></v-like>
+</view>
+
+<view class="fake-container">
+  <view class="post-header">
+    <text>取消</text>
+    <text>确定</text>
+  </view>
+  <view>
+    
+  </view>
+</view>

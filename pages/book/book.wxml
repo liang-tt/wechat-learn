@@ -1,0 +1,12 @@
+
+<view class="container">
+  <!-- 搜索框 -->
+  <v-search></v-search>
+
+  <view class="book-list">
+    <image src="/images/book/quality.png" ></image>
+    <v-book-list book-list="{{bookList}}"></v-book-list>
+  </view> 
+</view>
+
+

@@ -1,0 +1,38 @@
+/* components/exposid/exposid.wxss */
+.v-container {
+  display: inline-flex;
+  flex-direction: row;
+  height: 60rpx;
+}
+.date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.week {
+  font-size: 32rpx;
+}
+.date {
+  font-size:60rpx;
+  line-height:60rpx; 
+  font-weight:800;
+}
+.line {
+  height: 44rpx;
+  border-left: 1px solid;
+  margin-right: 14rpx;
+  margin-left: 14rpx;
+}
+
+.year-month {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end; 
+}
+.month {
+  font-size: 24rpx;
+  line-height: 24rpx;
+}
+.year {
+  font-size: 20rpx;
+}

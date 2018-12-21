@@ -1,0 +1,11 @@
+<!--components/book/book-grid/index.wxml-->
+<view class="book-container" bindtap="detail">
+  <image src="{{book.image}}" class="cover"></image>
+  <view class="description">
+    <text class="title">{{book.title}}</text>
+    <text class="author">{{book.author}}</text>
+    <view class="foot">
+      <text >{{book.fav_nums}}喜歡</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="search-container" bindtap='search'>
+  <image src="../images/search.png" class="icon-search"></image>
+  <text class="placeholder">搜索图书名称</text>
+</view>

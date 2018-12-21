@@ -1,0 +1,2 @@
+<!--components/tag/index.wxml-->
+ <view class="keyword">{{text}}</view>

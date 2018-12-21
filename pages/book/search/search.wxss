@@ -1,0 +1,22 @@
+/* pages/book/search/search.wxss */
+
+.search-result {
+  margin-top: 20rpx;
+  border-top: 1px solid #f7f7f7;
+  padding: 30rpx;
+}
+
+.loading-center {
+  left:50%;
+  position:absolute;
+  bottom:50%;
+}
+.loading-bottom {
+  position: absolute;
+  margin: 50rpx 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+ 

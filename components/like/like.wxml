@@ -1,0 +1,5 @@
+
+<view class="leke-container" bindtap='likeClick'>
+  <image src="{{likeStatus==1 ? likeImg: notLike }}" class="like-img"></image>
+  <text class="like-nums">{{favNums}}</text>
+</view>

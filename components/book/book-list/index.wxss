@@ -1,0 +1,8 @@
+/* components/book/book-list/index.wxss */
+.book-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 90rpx;
+}

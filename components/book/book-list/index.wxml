@@ -1,0 +1,6 @@
+<!--components/book/book-list/index.wxml-->
+<view class='book-container'>
+  <block wx:for="{{bookList}}">
+    <v-book book="{{item}}"></v-book>
+  </block>
+</view>
