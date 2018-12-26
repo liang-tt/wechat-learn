@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "v-search": "/components/book/searchSimple/index",
-    "v-like": "/components/like/like"
+    "v-like": "/components/like/like",
+    "v-tag": "/components/tag/index",
+    "v-mask": "/components/mask/index"
   }
 }

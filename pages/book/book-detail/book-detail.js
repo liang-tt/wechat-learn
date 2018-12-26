@@ -10,7 +10,9 @@ Page({
    */
   data: {
     id: '',
-    book: {}
+    book: {},
+    comments: [],  //短评
+    posting: false
   },
 
   /**
@@ -19,6 +21,7 @@ Page({
   onLoad: function (options) {
     const id= options.id;
     this.getDeatil(id)
+    this.getComments(id)
     this.setData({
       id: id
     })
@@ -50,11 +53,36 @@ Page({
       })
   },
 
+/**
+ * 获取短评
+ */
+  getComments(id) {
+    // const id = this.data.id;
+    bookModel.getComments(id)
+      .then(res => {
+        console.log(res)
+        this.setData({
+          comments: res.comments
+        })
+      })
+  },
+
   /**
    * 点击输入短评
    */
   fakePost() {
+    this.setData({
+      posting: true
+    })
+  },
 
+  /**
+   * 取消
+   */
+  cancelComment() {
+    this.setData({
+      posting: false
+    })
   },
 
   /**

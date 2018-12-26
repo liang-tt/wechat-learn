@@ -35,6 +35,13 @@ class BookModel extends HTTP {
       url: `book/${id}/detail`
     })
   }
+
+//获取书籍短评
+  getComments(id) {
+    return this.request({
+      url: `book/${id}/short_comment`
+    })
+  }
 }
 
 export {

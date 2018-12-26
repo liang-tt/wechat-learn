@@ -1,35 +1,53 @@
 <!--pages/book/book-detail/book-detail.wxml-->
+<wxs src="../../../utils/filter.wxs" module="util" />
 <view class='header'>
   <v-search></v-search>
 </view>
 <view class="content">
-  <view>
-    <image src="{{book.image}}"></image>
+  <view class="head">
+    <image src="{{book.image}}" class="cover"></image>
+    <text class="book-title">{{book.title}}</text>
+    <text class="author">{{book.author}}</text>
   </view>
   <view>
     <view class='title'>短评</view>
+    <view class="comments-container">
+      <block wx:for="{{comments}}">
+        <v-tag text="{{item.content}}">
+          <text slot="num" class="nums">+{{item.nums}}</text>
+        </v-tag>
+      </block>
+    </view>
   </view>
   <view>
     <view class='title'>内容简介</view>
+    <text decode='{{true}}' class='summary'>{{util.format(book.summary)}}</text>
   </view>
   <view>
-    <view class='title'>书本信息</view>
+    <view class='title'>书本信息</view> 
   </view>
 </view>
 
-<view class="bottom">
+<view class="bottom"  wx:if="{{!posting}}">
   <view class="post-fake" bindtap='fakePost'>
     <text>留下你的短评</text>
   </view>
   <v-like></v-like>
 </view>
 
-<view class="fake-container">
+<view class="fake-container" wx:if="{{posting}}">
   <view class="post-header">
-    <text>取消</text>
-    <text>确定</text>
+    <view bindtap='cancelComment'>取消</view>
+    <view>确定</view>
   </view>
-  <view>
-    
+  <view class="posting-container">
+    <view class='comments-container'>
+      <block wx:for="{{comments}}">
+        <v-tag text="{{item.content}}"></v-tag>
+      </block>
+    </view>
   </view>
+  
 </view>
+
+<v-mask wx:if="{{posting}}"></v-mask>
